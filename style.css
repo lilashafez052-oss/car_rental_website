@@ -1,0 +1,253 @@
+/* الإعدادات العامة */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    direction: rtl;
+    text-align: right;
+    background-color: #f3f5f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* العنوان الرئيسي */
+h1 {
+    color: #2f5c94;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #24527a;
+    font-size: 22px;
+    margin-top: 25px;
+}
+/* شريط التنقل */
+.navigation {
+    background-color:white;
+    padding: 12px 15px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.navigation a {
+    color: #24527a;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 12px;
+}
+
+.navigation a:hover {
+    color: #cfe4ff;
+    text-decoration: underline;
+}
+
+/* الجداول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin: 15px 0 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+th,
+td {
+    border: 1px solid #d5dce5;
+    padding: 12px;
+    text-align: right;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+th {
+    background-color: #17365d;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+tr:hover {
+    background-color: #edf4fc;
+}
+
+/* صور السيارات */
+img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 160px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* تفاصيل السيارات */
+.car-details {
+    padding: 10px;
+    line-height: 1.8;
+    overflow: hidden;
+    text-align: right;
+}
+
+ul {
+    padding-right: 25px;
+    margin: 8px 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+.car-img {
+    float: left;
+    width: 300px;
+    height: 200px; 
+    margin-right :10px; 
+    max-width: 300px;
+}
+
+    
+.cars-table th,
+.cars-table td{
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: right;
+}
+
+/* أزرار الموقع */
+button,
+input[type="button"],
+input[type="submit"] {
+    background-color: #17365d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: #24527a;
+}
+
+/* حقول نموذج الحجز */
+fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+}
+
+legend {
+    color: #17365d;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+input[type="number"] {
+    width: 100%;
+    max-width: 450px;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 16px;
+    direction: rtl;
+}
+
+/* نتيجة الحجز */
+#bookingResult {
+    white-space: pre-line;
+    background-color: white;
+    border-right: 4px solid #24527a;
+    padding: 15px;
+    margin-top: 20px;
+    line-height: 1.9;
+}
+
+/* تحسين العرض على الشاشات الصغيرة */
+@media screen and (max-width: 700px) {
+    body {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 150px;
+        height: 100px;
+    }
+    .car-img {
+        max-width: 150px;
+        height: 100px;
+    }
+
+    navigation a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+ }
+ /* تنسيق نموذج الحجز */
+#bookingFormContainer {
+    width: 100%;
+    margin: 25px auto;
+    text-align: right;
+}
+
+#bookingFormContainer h2,
+#bookingResult {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bookingForm {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#bookingForm fieldset {
+    width: 100%;
+    margin: 0;
+    text-align: right;
+}
